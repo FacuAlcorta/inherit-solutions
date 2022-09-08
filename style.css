@@ -1,0 +1,109 @@
+/* ------------ Fuentes de google ------------- */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Oswald:wght@400;500;700&family=Special+Elite&family=Yanone+Kaffeesatz&display=swap');
+/* ------------ Custom css -------------*/
+:root {
+    --main: #0ef0b9;
+    --shadow: 0 15px 40px rgba(0, 0, 0, 0.9);
+}
+/* ----------- CSS general -----------*/
+* {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+.container {
+    max-width: inherit;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ----------- CSS principal ---------- */
+
+/* ----------- Navbar ------------- */
+
+nav {
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 99;
+    transition: all 300ms;
+    background-color: black;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+img {
+   max-width: 150px; 
+   min-width: 100px;
+   transition: all 300ms;
+}
+
+.menu,
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.menu-item {
+    color: var(--main);
+    font-weight: 500;
+}
+
+.menu-item::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--main);
+    display: block;
+    margin: 0 auto;
+    transition: all 300ms;
+
+} 
+
+.menu-item:hover::after {
+    width: 100%;
+}
+
+.icon-box {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* ----------- Menu responsive */
