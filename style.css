@@ -106,4 +106,50 @@ img {
     cursor: pointer;
 }
 
+.open-menu i {
+    font-size: 2rem;
+    color: var(--main)
+}
+
+.open-menu {
+    display: none;
+}
+
+.close-menu i {
+    font-size: 2rem;
+    color: var(--main);
+}
+
+.close-menu {
+    display: none;
+}
+
 /* ----------- Menu responsive */
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        background-color: white;
+        height: 100vh;
+        color: black;
+        width: 50%;
+        padding: 1rem;
+        transform: translateX(100%);
+    }
+
+    .menu.open {
+        transform: translateX(0);
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-item {
+        color: black;
+    }
+}
